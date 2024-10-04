@@ -10,7 +10,11 @@ This was done in one night and the next morning.
 
 # Data Cleaning and Imputation
 Dropped 'cabin' as too many values were missing (however, later extracted deck from it)
+
+
 Imputed 'age' with XGBoost which improved the accuracy of the model a fair bit
+
+
 Imputed 'embarked' with mode (only a couple values were missing)
 
 # Training
@@ -22,9 +26,15 @@ This is one of the first models that I have actually implemented without an acco
 
 In specific:
 -Not getting hung up on making everything perfect initially and just getting working predictions, made me more likely to persevere 
+
+
 -I realized I worked on hyperparameter tuning WAY too early. However, setting up the foundation for re-using it was still very helpful.
+
+
 -Realizing the importance of imputation, I spent a lot of time trying to feature engineer when in reality I got much better results focusing on imputation.
 
 # What I would change if I spent more time
 -I would try to increase the accuracy of the age imputation
+
+
 -I would start to spend more effort on hyperparameter tuning
