@@ -1,0 +1,54 @@
+create new features:
+    could see if they are married from name - done
+    family size - done
+    bin the age groups (child, adult, elderly) - done
+    fare per person - done
+    hasCabin - done
+    isTravellingAlone - done
+    Deck from cabin number - done
+    fare bins - done
+    family survival rate - done
+    ticket frequency, (number of passengers with the same ticket number)
+    isParent - done
+
+Interactions between features:
+    age * class 
+    embarked * pclass
+    sex * pclass
+    sibsp * pclass
+    parch * pclass
+    fare * pclass
+    isMarried * pclass
+    isParent * pclass
+    isTravellingAlone * pclass
+    HasCabin * pclass
+
+    #biggest ones imo
+    isParent * sex
+    age * sex
+    pClass * sex
+    pClass * age
+    p
+
+impute the data differently
+hyperparameter tuning - DONE, on final model could squeeze a tad more
+regularization (L1 or L2) DONE
+Cross Validation - DONE
+
+Number to beat #1: 86.3%
+Basic hyperparameter tuning: 91.4%
+I tuned too early, so resetting the tune
+Number to beat: 80% validation accuracy
+Number to beat #2: 80% validation accuracy
+Training accuracy: 85.5%; on training;
+Training accuracy: 90.2% on training;
+added binning to age, fare, and extracted title from name: 90.12%
+added isMarried: 91.1%
+added isParent, family size, and family size bins: 85.7% (performance dropped, so we will need to clean features)
+isTravellingAlone, deck, cabin, fare per person - 88.9% (something here was useful)
+family survial rate - 87.7% (performance dropped slightly)
+removed sibsp, fare, and title - 91.2%
+added interactions - 92.1%
+advanced age imputation - 92.9%
+
+in the future, do hyperparameter tuning last
